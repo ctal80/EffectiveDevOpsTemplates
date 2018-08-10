@@ -22,7 +22,7 @@ GithubAnsibleURL = "https://github.com/{}/ansible".format(GithubAccount)
 PublicCidrIp = str(ip_network(get_ip()))
 
 AnsiblePullCmd = \
-"/usr/local/bin/ansible-pull -U {} {}.yml -i localhost".format( GithubAnsibleURL,
+"/usr/bin/ansible-pull -U {} {}.yml -i localhost".format( GithubAnsibleURL,
 ApplicationName
 )
 
